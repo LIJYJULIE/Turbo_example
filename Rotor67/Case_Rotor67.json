@@ -1,0 +1,45 @@
+{
+    "mesh": {
+        "scale_factor":1,
+        "cor_fac":1,
+        "refine_fac":1,
+        "flip":[1,1,1],
+        "ywall":1.0e-6,
+        "zwall":1.0e-6,
+        "aspect_ratio":5000.0,
+        "outlet_refine":false
+    },
+    "mode": {
+        "geometry":"blade",
+        "nblock":12,
+        "dimension": [false, true],
+        "use_ext": true,
+        "doe": false
+    },
+    "gerl": {
+        "use_mode":"absolute",
+        "pDlead":-0.01374,
+        "pDtrail":0.09365,
+        "lext_lead": -0.12113,
+        "lext_trail": 0.20104,
+        "design_dimension": "3D",
+        "inputformat": "curve",
+        "design_type": "Work-Absorbing",
+        "file_swn_hub": "rotor67_hub.csv",
+        "file_swn_tip": "rotor67_shroud.csv",
+        "file_ps":"rotor67_profile.csv",
+        "file_ss":"",
+        "nfile": 14,
+        "tub_data": " ",
+        "blade_name_stack": [ ],
+        "blade_type_stack": [ ],
+        "nblade": 22,
+        "pitch": "",
+        "span":  "",
+        "tipgap":0.001016
+    },
+    "output": {
+        "mesh_format": "ANSYSmsh",
+        "mesh_output": "Rotor67_cr.msh"
+    }
+}

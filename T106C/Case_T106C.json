@@ -1,0 +1,45 @@
+{
+    "mesh": {
+        "scale_factor":1,
+        "cor_fac":1,
+        "refine_fac":1,
+        "flip":[1,1,1],
+        "ywall":1.0e-5,
+        "zwall":1.0e-4,
+        "aspect_ratio":800.0,
+        "outlet_refine":false
+    },
+    "mode": {
+        "geometry":"blade",
+        "nblock":12,
+        "dimension": [false, true],
+        "use_ext": false,
+        "doe": false
+    },
+    "gerl": {
+        "use_mode":"relative",
+        "pDlead":1.5,
+        "pDtrail":1.5,
+        "lext_lead": 0.0,
+        "lext_trail": 0.0,
+        "design_dimension": "2D",
+        "design_type": "Work-Producing",
+        "inputformat": "data",
+        "file_swn_hub": " ",
+        "file_swn_tip": " ",
+        "file_ps":"T106C_ps.dat",
+        "file_ss":"T106C_ss.dat",
+        "nfile": 1,
+        "tub_data": " ",
+        "blade_name_stack": [ ],
+        "blade_type_stack": [ ],
+        "nblade": 1,
+        "pitch": 0.08836,
+        "span": 0.520,
+        "tipgap":0
+    },
+    "output": {
+        "mesh_format": "ANSYSmsh",
+        "mesh_output": "T106C.msh"
+    }
+}

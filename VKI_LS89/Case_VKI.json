@@ -1,0 +1,45 @@
+{
+    "mesh": {
+        "scale_factor":1,
+        "cor_fac":1,
+        "refine_fac":1,
+        "flip":[1,1,1],
+        "ywall":5.0e-5,
+        "zwall":1.0e-6,
+        "aspect_ratio":1000.0,
+        "outlet_refine":true
+    },
+    "mode": {
+        "geometry":"blade",
+        "nblock":12,
+        "dimension": [false, true],
+        "use_ext": false,
+        "doe": false
+    },
+    "gerl": {
+        "use_mode":"relative",
+        "pDlead":1.0,
+        "pDtrail":1.0,
+        "lext_lead": 0.0,
+        "lext_trail": 0.0,
+        "design_dimension": "2D",
+        "design_type": "Work-Producing",
+        "inputformat": "data",
+        "file_swn_hub": " ",
+        "file_swn_tip": " ",
+        "file_ps":"VKI_LS89_ps.dat",
+        "file_ss":"VKI_LS89_ss.dat",
+        "nfile": 1,
+        "tub_data": " ",
+        "blade_name_stack": [ ],
+        "blade_type_stack": [ ],
+        "nblade": 1,
+        "pitch": 0.05749995,
+        "span": 0.25,
+        "tipgap":0
+    },
+    "output": {
+        "mesh_format": "ANSYSmsh",
+        "mesh_output": "VKI_LS89.msh"
+    }
+}
