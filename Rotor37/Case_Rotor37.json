@@ -3,7 +3,6 @@
         "scale_factor":1,
         "cor_fac":1,
         "refine_fac":1,
-        "flip":[1,1,1],
         "ywall":1.0e-6,
         "zwall":1.0e-6,
         "aspect_ratio":3000.0,
@@ -11,13 +10,10 @@
     },
     "mode": {
         "geometry":"blade",
-        "nblock":12,
-        "dimension": [false, true],
-        "use_ext": true,
-        "doe": false
+        "use_ext": true
     },
     "gerl": {
-        "use_mode":"absolute",
+        "use_mode":"relative",
         "pDlead":-0.00246,
         "pDtrail":0.04521,
         "lext_lead": -0.06725,
@@ -27,19 +23,18 @@
         "inputformat": "geomTurbo",
         "file_swn_hub": "",
         "file_swn_tip": "",
-        "file_ps":"rotor37.geomTurbo",
+        "file_ps":"rotor37-2.geomturbo",
         "file_ss":"",
         "nfile": 1,
-        "tub_data": " ",
-        "blade_name_stack": [ ],
-        "blade_type_stack": [ ],
         "nblade": 36,
         "pitch": "",
         "span":  "",
-        "tipgap":0.000356
+        "tipgap":0.000356,
+        "hub_fillet_r":0.0,
+        "tip_fillet_r":0.0
     },
     "output": {
         "mesh_format": "ANSYSmsh",
-        "mesh_output": "Rotor37.msh"
+        "mesh_output": "Rotor37_1016.msh"
     }
 }

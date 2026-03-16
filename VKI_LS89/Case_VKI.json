@@ -3,7 +3,6 @@
         "scale_factor":1,
         "cor_fac":1,
         "refine_fac":1,
-        "flip":[1,1,1],
         "ywall":5.0e-5,
         "zwall":1.0e-6,
         "aspect_ratio":1000.0,
@@ -11,10 +10,7 @@
     },
     "mode": {
         "geometry":"blade",
-        "nblock":12,
-        "dimension": [false, true],
-        "use_ext": false,
-        "doe": false
+        "use_ext": false
     },
     "gerl": {
         "use_mode":"relative",
@@ -30,16 +26,15 @@
         "file_ps":"VKI_LS89_ps.dat",
         "file_ss":"VKI_LS89_ss.dat",
         "nfile": 1,
-        "tub_data": " ",
-        "blade_name_stack": [ ],
-        "blade_type_stack": [ ],
         "nblade": 1,
         "pitch": 0.05749995,
         "span": 0.25,
-        "tipgap":0
+        "tipgap":0,
+        "hub_fillet_r":0.0,
+        "tip_fillet_r":0.0
     },
     "output": {
-        "mesh_format": "ANSYSmsh",
-        "mesh_output": "VKI_LS89.msh"
+        "mesh_format": "SU2",
+        "mesh_output": "VKI_lv0.su2"
     }
 }

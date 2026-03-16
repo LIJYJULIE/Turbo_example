@@ -44,5 +44,8 @@ In the tests, the mesh used by the author has a $y_{wall}$ of about 5e-5. Since 
 For spatial discretization, using JST can lead to noticeable total pressure overshoot in the wake. Using ROE+MUSCL while keeping the limiter as VAN\_ALBADA\_EDGE (ENTROPY\_FIX\_COEFF=0.001) yields simulation results close to the experimental data.
 
 It should also be noted that the outlet measurement position in this experiment is relatively upstream. If the outlet mesh in the simulation is longer, consider slightly adjusting the outlet static pressure.
+It is worth noting that manual grid sequencing is effective for initialization and accelerating convergence.
 
 For more detailed results, visit https://lijyjulie.github.io/POSTER/results-tb/
+
+Find ACADE_turbo meshing tool and SU2 online(free): https://www.acadeturbo.com/accounts/login/

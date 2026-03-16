@@ -30,7 +30,8 @@ Rotor37 was designed and built by NASA Glenn Research Center with the goal of ac
 
   
 ## Simulation tips
-When using fully wall-resolved simulations, $y_{plus}$ should be kept below 5 and $z_{plus}$ as close to 1 as possible. For computational efficiency, a coarse mesh with a relaxed aspect ratio is specified in the `Case_Rotor37.json` configuration.
+When using fully wall-resolved simulations, $y_{plus}$ should be kept below 5 and $z_{plus}$ as close to 1 as possible. 
+For computational efficiency, a coarse mesh with a relaxed aspect ratio is specified in the `Case_Rotor37.json` configuration.
 
 In the SU2 calculation configuration, to obtain simulation results comparable to experimental data, the V2003m version is preferred over V1994m when using the SST model. However, if the initial calculation is unstable, consider running with V1994m for a period before switching to V2003m, as done in the provided configuration files.
 
@@ -38,5 +39,10 @@ To avoid flow blockage, the Mach number and Reynolds number of the FREE-STREAM s
 
 For spatial discretization, the default JST parameters are used in this calculation. If ROE is needed, use the VAN_ALBADA_EDGE limiter and keep `ENTROPY_FIX_COEFF` always at 0.001.
 Although increasing dissipation(or using a stronger limiter) can reduce residuals and make the calculation more stable, it will also cause the shock details on the suction side to be almost completely lost.
+(Within a limited computational budget of tens of thousands to hundreds of thousands of iterations, different computational approaches yield vastly different three-dimensional flow field details, despite showing minimal differences in macroscopic quantities such as inlet-outlet total pressure ratio and total temperature ratio, which may even be comparable to experimental values.)
 
 For more detailed results, visit https://lijyjulie.github.io/POSTER/results-tb/
+
+NASA Turbulence Modeling Resource for Rotor 37: https://turbmodels.larc.nasa.gov/Other_exp_Data/rotor37_exp.html
+
+Find ACADE_turbo meshing tool and SU2 online(free): https://www.acadeturbo.com/accounts/login/

@@ -3,18 +3,14 @@
         "scale_factor":1,
         "cor_fac":1,
         "refine_fac":1,
-        "flip":[1,1,1],
         "ywall":1.0e-5,
         "zwall":1.0e-4,
         "aspect_ratio":800.0,
-        "outlet_refine":false
+        "outlet_refine":true
     },
     "mode": {
         "geometry":"blade",
-        "nblock":12,
-        "dimension": [false, true],
-        "use_ext": false,
-        "doe": false
+        "use_ext": false
     },
     "gerl": {
         "use_mode":"relative",
@@ -30,16 +26,15 @@
         "file_ps":"T106C_ps.dat",
         "file_ss":"T106C_ss.dat",
         "nfile": 1,
-        "tub_data": " ",
-        "blade_name_stack": [ ],
-        "blade_type_stack": [ ],
         "nblade": 1,
         "pitch": 0.08836,
         "span": 0.520,
-        "tipgap":0
+        "tipgap":0,
+        "hub_fillet_r":0.0,
+        "tip_fillet_r":0.0
     },
     "output": {
         "mesh_format": "ANSYSmsh",
-        "mesh_output": "T106C.msh"
+        "mesh_output": "T106C_lv2.msh"
     }
 }
